@@ -26,13 +26,13 @@ namespace GradeBook.Tests
         [Fact]
         public void StringsBehaveLikeValueTypes(){
             string name = "Adam";
-            var upper = MakeUpperase(name);
+            var upper = MakeUppercase(name);
 
             Assert.Equal("Adam", name);
             Assert.Equal("ADAM", upper);
         }
 
-        private string MakeUpperase(string parameter)
+        private string MakeUppercase(string parameter)
         {
             return parameter.ToUpper();
         }
